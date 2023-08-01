@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Light-gray: hsl(212, 45%, 89%);
+    --Grayish-blue: hsl(220, 15%, 55%);
+    --Dark-blue: hsl(218, 44%, 22%);
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100%;
+    background-color: var(--Light-gray);
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-box {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 1rem;
+    background-color: var(--White);
+}
+
+.main-box img {
+    height: 300px;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.header {
+    font-weight: 700;
+    font-size: 23px;
+    text-align: center;
+    color: var(--Dark-blue);
+}
+
+.paragraph {
+    text-align: center;
+    margin: 1rem 1rem 0rem 1rem;
+    white-space: pre;
+    color: var(--Grayish-blue);
+}
+
+footer {
+    position: fixed;
+    bottom: 20px;
+}
+
+footer a {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 767px) {
+    
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px){
+    .main-box img {
+        width: 400px;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    
+}
